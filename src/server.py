@@ -17,10 +17,9 @@ def main():
     while True:
         print("Aguardando cliente...")
 
-        client_socket, client_address = server_socket.accept()  # Unpacking the tuple
+        client_socket, client_address = server_socket.accept()  
         print(f"Cliente conectado: {client_address}")
 
-        # Use t.start() to properly start the thread
         t = threading.Thread(target=handle_client, args=(client_socket, client_num))
         t.start()
 
@@ -29,21 +28,22 @@ def main():
 def handle_client(socket, ident):
     print(f"Cliente {ident} conectado")
 
-    data, bytes_received = recv_variable_length(socket)
+    while True:
+        data, bytes_received = recv_variable_length(socket)
 
-    if data is None:
-        print(f"Cliente {ident} - Erro ao receber dados do cliente {ident}")
-        return
+        if data is None:
+            print(f"Cliente {ident} - Erro ao receber dados do cliente {ident}")
+            return
 
-    count = data.count(b"PING")  # Count PINGs in bytes
+        count = data.count(b"PING") 
 
-    print(f"Cliente {ident} - Recebido: {count} PINGs")  # Decode bytes to string
+        print(f"Cliente {ident} - Recebido: {count} PINGs")  
 
-    message = " ".join(["PONG"] * count)
+        message = " ".join(["PONG"] * count)
 
-    send_variable_length(socket, message)
+        send_variable_length(socket, message)
 
-    print(f"Cliente {ident} - Enviado: {count} PONGs")
+        print(f"Cliente {ident} - Enviado: {count} PONGs")
 
 if __name__ == "__main__":
     main()

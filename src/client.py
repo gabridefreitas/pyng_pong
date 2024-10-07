@@ -2,7 +2,8 @@ import socket
 import time
 from helpers import recv_variable_length, send_variable_length
 
-PING_COUNT = 10000000
+MESSAGE_SIZES = [10, 100, 1000, 5000, 10000, 50000, 100000, 500000, 1000000]
+
 
 def send_message_and_measure(socket, message):
     start_time = time.time()
@@ -37,21 +38,22 @@ def main():
     print("Conectando socket ao endereço localhost na porta 8765")
     client_socket.connect(("localhost", 8765))
 
-    print("Construindo a mensagem")
-    msg = " ".join(["PING"] * PING_COUNT)
+    for msg_size in MESSAGE_SIZES:
+        print("Construindo a mensagem")
+        msg = " ".join(["PING"] * msg_size)
 
-    print(f"Enviando {PING_COUNT} PINGs")
+        print(f"Enviando {msg_size} PINGs")
 
-    rtt, bytes_sent, bytes_received = send_message_and_measure(client_socket, msg)
+        rtt, bytes_sent, bytes_received = send_message_and_measure(client_socket, msg)
 
-    if rtt is not None:
-        print("\n--- Resumo da Transmissão ---")
-        print(f"Bytes Enviados: {bytes_sent} bytes")
-        print(f"Bytes Recebidos: {bytes_received} bytes")
-        print(f"RTT: {rtt:.6f} segundos")
-        print(f"Largura de Banda: {bytes_sent + bytes_received} bytes / {rtt:.6f} segundos = {(bytes_sent + bytes_received) / rtt:.2f} bytes/segundo")
-    else:
-        print("A transmissão não foi concluída com sucesso.")
+        if rtt is not None:
+            print("\n--- Resumo da Transmissão ---")
+            print(f"Bytes Enviados: {bytes_sent} bytes")
+            print(f"Bytes Recebidos: {bytes_received} bytes")
+            print(f"RTT: {rtt:.6f} segundos")
+            print(f"Largura de Banda: {bytes_sent + bytes_received} bytes / {rtt:.6f} segundos = {(bytes_sent + bytes_received) / rtt:.2f} bytes/segundo")
+        else:
+            print("A transmissão não foi concluída com sucesso.")
 
     client_socket.close()
     print("Conexão encerrada.")
