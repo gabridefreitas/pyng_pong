@@ -1,0 +1,28 @@
+Inicializando socket
+Atribuindo socket ao endereço localhost na porta 8765
+Pronto para conexões na porta 8765
+Aguardando cliente...
+Cliente conectado: ('127.0.0.1', 53877)
+Cliente 0 conectado
+Aguardando cliente...
+Cliente 0 - Recebido: 10 PINGs
+Cliente 0 - Enviado: 10 PONGs
+Cliente 0 - Recebido: 100 PINGs
+Cliente 0 - Enviado: 100 PONGs
+Cliente 0 - Recebido: 1000 PINGs
+Cliente 0 - Enviado: 1000 PONGs
+Cliente 0 - Recebido: 5000 PINGs
+Cliente 0 - Enviado: 5000 PONGs
+Cliente 0 - Recebido: 10000 PINGs
+Cliente 0 - Enviado: 10000 PONGs
+Cliente 0 - Recebido: 50000 PINGs
+Cliente 0 - Enviado: 50000 PONGs
+Cliente 0 - Recebido: 100000 PINGs
+Cliente 0 - Enviado: 100000 PONGs
+Cliente 0 - Recebido: 500000 PINGs
+Cliente 0 - Enviado: 500000 PONGs
+Cliente 0 - Recebido: 1000000 PINGs
+Cliente 0 - Enviado: 1000000 PONGs
+Erro ao receber dados: Socket foi encerrado inesperadamente
+Erro: Não foi possível receber o comprimento da mensagem
+Cliente 0 - Erro ao receber dados do cliente 0

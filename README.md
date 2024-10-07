@@ -20,3 +20,9 @@ python client.py
 
 - Gabriel de Freitas
 - Luis Dorr
+
+## Results
+
+[Client logs](res/client.txt) and [Server logs](res/server.txt) available in the [res](/res/) folder.
+
+![Results](res/image.png)

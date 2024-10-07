@@ -1,0 +1,102 @@
+Inicializando socket
+Conectando socket ao endereço localhost na porta 8765
+Construindo a mensagem
+Enviando 10 PINGs
+Resposta do servidor: 53 bytes com 10 PONGs
+Tempo de Ida e Volta (RTT): 0.000504 segundos
+Largura de Banda Utilizada: 210310.42 bytes/segundo
+
+--- Resumo da Transmissão ---
+Bytes Enviados: 53 bytes
+Bytes Recebidos: 53 bytes
+RTT: 0.000504 segundos
+Largura de Banda: 106 bytes / 0.000504 segundos = 210310.42 bytes/segundo
+Construindo a mensagem
+Enviando 100 PINGs
+Resposta do servidor: 503 bytes com 100 PONGs
+Tempo de Ida e Volta (RTT): 0.000146 segundos
+Largura de Banda Utilizada: 6894558.54 bytes/segundo
+
+--- Resumo da Transmissão ---
+Bytes Enviados: 503 bytes
+Bytes Recebidos: 503 bytes
+RTT: 0.000146 segundos
+Largura de Banda: 1006 bytes / 0.000146 segundos = 6894558.54 bytes/segundo
+Construindo a mensagem
+Enviando 1000 PINGs
+Resposta do servidor: 5003 bytes com 1000 PONGs
+Tempo de Ida e Volta (RTT): 0.000174 segundos
+Largura de Banda Utilizada: 57490692.91 bytes/segundo
+
+--- Resumo da Transmissão ---
+Bytes Enviados: 5003 bytes
+Bytes Recebidos: 5003 bytes
+RTT: 0.000174 segundos
+Largura de Banda: 10006 bytes / 0.000174 segundos = 57490692.91 bytes/segundo
+Construindo a mensagem
+Enviando 5000 PINGs
+Resposta do servidor: 25003 bytes com 5000 PONGs
+Tempo de Ida e Volta (RTT): 0.000386 segundos
+Largura de Banda Utilizada: 129549330.34 bytes/segundo
+
+--- Resumo da Transmissão ---
+Bytes Enviados: 25003 bytes
+Bytes Recebidos: 25003 bytes
+RTT: 0.000386 segundos
+Largura de Banda: 50006 bytes / 0.000386 segundos = 129549330.34 bytes/segundo
+Construindo a mensagem
+Enviando 10000 PINGs
+Resposta do servidor: 50003 bytes com 10000 PONGs
+Tempo de Ida e Volta (RTT): 0.000457 segundos
+Largura de Banda Utilizada: 218808328.55 bytes/segundo
+
+--- Resumo da Transmissão ---
+Bytes Enviados: 50003 bytes
+Bytes Recebidos: 50003 bytes
+RTT: 0.000457 segundos
+Largura de Banda: 100006 bytes / 0.000457 segundos = 218808328.55 bytes/segundo
+Construindo a mensagem
+Enviando 50000 PINGs
+Resposta do servidor: 250003 bytes com 50000 PONGs
+Tempo de Ida e Volta (RTT): 0.002111 segundos
+Largura de Banda Utilizada: 236862114.96 bytes/segundo
+
+--- Resumo da Transmissão ---
+Bytes Enviados: 250003 bytes
+Bytes Recebidos: 250003 bytes
+RTT: 0.002111 segundos
+Largura de Banda: 500006 bytes / 0.002111 segundos = 236862114.96 bytes/segundo
+Construindo a mensagem
+Enviando 100000 PINGs
+Resposta do servidor: 500003 bytes com 100000 PONGs
+Tempo de Ida e Volta (RTT): 0.003987 segundos
+Largura de Banda Utilizada: 250812005.37 bytes/segundo
+
+--- Resumo da Transmissão ---
+Bytes Enviados: 500003 bytes
+Bytes Recebidos: 500003 bytes
+RTT: 0.003987 segundos
+Largura de Banda: 1000006 bytes / 0.003987 segundos = 250812005.37 bytes/segundo
+Construindo a mensagem
+Enviando 500000 PINGs
+Resposta do servidor: 2500003 bytes com 500000 PONGs
+Tempo de Ida e Volta (RTT): 0.024763 segundos
+Largura de Banda Utilizada: 201913513.50 bytes/segundo
+
+--- Resumo da Transmissão ---
+Bytes Enviados: 2500003 bytes
+Bytes Recebidos: 2500003 bytes
+RTT: 0.024763 segundos
+Largura de Banda: 5000006 bytes / 0.024763 segundos = 201913513.50 bytes/segundo
+Construindo a mensagem
+Enviando 1000000 PINGs
+Resposta do servidor: 5000003 bytes com 1000000 PONGs
+Tempo de Ida e Volta (RTT): 0.047764 segundos
+Largura de Banda Utilizada: 209363594.99 bytes/segundo
+
+--- Resumo da Transmissão ---
+Bytes Enviados: 5000003 bytes
+Bytes Recebidos: 5000003 bytes
+RTT: 0.047764 segundos
+Largura de Banda: 10000006 bytes / 0.047764 segundos = 209363594.99 bytes/segundo
+Conexão encerrada.
